@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Declares that this document is written in HTML5 -->
+
+<html lang="en">
+<!-- Root HTML element; 'lang="en"' defines the language as English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies UTF-8 character encoding (supports almost all characters) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive — fits screen width on phones/tablets -->
+
+    <title>Tables</title>
+    <!-- Title shown in the browser tab -->
+</head>
+
+<body>
+    <!-- All the visible content goes inside the body -->
+
+    <!-- ---------------- BASIC TABLE EXAMPLE ---------------- -->
+    <table>
+        <!-- <table> defines a table structure -->
+        <tr>
+            <!-- <tr> defines a table row -->
+            <td>Column 1</td>
+            <!-- <td> defines a table data cell (normal cell for content) -->
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+    </table>
+    <!-- This creates a single row with three columns (no header yet) -->
+
+    <br>
+    <!-- Adds a line break for spacing between the two tables -->
+
+    <!-- ---------------- TABLE WITH HEADERS AND MULTIPLE ROWS ---------------- -->
+    <table border="1">
+        <!-- Added 'border="1"' (optional) to make table borders visible for clarity -->
+        <tr>
+            <!-- First row contains table headers -->
+            <th>Name</th>
+            <!-- <th> defines a table header cell — by default text is bold and centered -->
+            <th>Email</th>
+            <th>DOB</th>
+        </tr>
+
+        <!-- Second row -->
+        <tr>
+            <td>Hitesh</td>
+            <!-- <td> is a normal table data cell -->
+            <td>h@hitesh.com</td>
+            <td>02/02/2024</td>
+        </tr>
+
+        <!-- Third row -->
+        <tr>
+            <td>Mr. H</td>
+            <td>h@hitesh.com</td>
+            <td>02/02/2024</td>
+        </tr>
+    </table>
+    <!-- This table has one header row and two data rows -->
+</body>
+</html>
