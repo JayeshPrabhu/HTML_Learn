@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Example</title>
+</head>
+<body>
+    <!-- Login Form Section -->
+    <h1>Login Form</h1>
+    <form>
+        <!-- Email input field -->
+        <label for="email">
+            Email:
+            <!-- 'placeholder' shows text inside input box -->
+            <input placeholder="test" type="text" name="email" id="email">
+        </label>
+        <br><br>
+        <!-- Password input field -->
+        <label for="password">
+            Password:
+            <input placeholder="enter your password" type="password" name="password" id="password">
+        </label>
+        <br><br>
+        <!-- Reset button clears all inputs -->
+        <button type="reset">Reset</button>
+        <!-- You may also add a submit button if you want form submission -->
+        <!-- <button type="submit">Login</button> -->
+    </form>
+
+    <hr>
+
+    <!-- Another Form Section -->
+    <div>
+        <h2>Learning Form</h2>
+        <form>
+            <!-- Checkbox example -->
+            <label for="basketball">
+                Basketball:
+                <input type="checkbox" name="sports" id="basketball">
+            </label>
+            <br><br>
+            <!-- Dropdown/select menu -->
+            <label for="games">
+                Select Game:
+                <select name="games" id="games">
+                    <option value="Cricket">Cricket</option>
+                    <option value="Baseball">Baseball</option>
+                </select>
+            </label>
+            <br><br>
+            <!-- Color picker -->
+            <label for="favcolor">
+                Pick a color:
+                <input type="color" name="favcolor" id="favcolor">
+            </label>
+            <br><br>
+            <!-- Submit button sends form data -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
