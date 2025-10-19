@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Full Example with Explanations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        header, nav, main, section, article, aside, footer,
+        figure, figcaption, mark, time, address {
+            border: 1px solid #555;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        header { background-color: #f8d7da; }
+        nav { background-color: #d1ecf1; }
+        main { background-color: #d4edda; }
+        section { background-color: #fff3cd; }
+        article { background-color: #cce5ff; }
+        aside { background-color: #e2e3e5; }
+        footer { background-color: #f5c6cb; }
+        figure { background-color: #f0f0f0; }
+        mark { background-color: yellow; }
+        address { background-color: #ffe6cc; }
+    </style>
+</head>
+<body>
+
+    <!-- Header: Top section of the page -->
+    <!-- Used to contain site title, logo, or introductory content -->
+    <header>
+        <h1>My Semantic Website</h1>
+        <p>Header is used to introduce the site and help users understand the context of the page.</p>
+    </header>
+
+    <!-- Navigation -->
+    <!-- Used to group main navigation links for the site -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <!-- Contains the core content of the page; there should be only one main per page -->
+    <main>
+
+        <!-- Section: Home -->
+        <!-- Groups related content under a specific theme -->
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>Sections help organize the page into meaningful thematic groups for better readability and accessibility.</p>
+        </section>
+
+        <!-- Article: Blog post -->
+        <!-- Represents a self-contained piece of content that could be independently distributed or reused -->
+        <article id="blog">
+            <h2>Blog Article</h2>
+            <p>Articles are used for content like blog posts, news stories, or tutorials that can stand alone.</p>
+
+            <!-- Figure with image and caption -->
+            <!-- Used to wrap media content (images, videos, diagrams) with an optional caption -->
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Example Image">
+                <figcaption>Figure 1: Example image in a blog article</figcaption>
+            </figure>
+
+            <!-- Mark: highlight important text -->
+            <!-- Helps draw attention to important phrases -->
+            <p>Important text can be <mark>highlighted using the mark tag</mark> to emphasize it.</p>
+
+            <!-- Time: represent dates and times in a machine-readable format -->
+            <!-- Used for semantic meaning and better SEO/accessibility -->
+            <p>Published on: <time datetime="2025-10-19">October 19, 2025</time></p>
+        </article>
+
+        <!-- Aside: Sidebar -->
+        <!-- Used for content indirectly related to the main content, like tips, ads, or related links -->
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">Another Article</a></li>
+                <li><a href="#">Resource Link</a></li>
+            </ul>
+        </aside>
+
+        <!-- Section: About -->
+        <!-- Another section grouping related content, improves readability and structure -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This section groups content about the website or company, providing context to users.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer: bottom section -->
+    <!-- Used to contain copyright, contact info, and links that appear at the end of the page -->
+    <footer>
+        <p>&copy; 2025 My Semantic Website. All rights reserved.</p>
+
+        <!-- Address: contact information -->
+        <!-- Provides semantic meaning for contact info, improving accessibility -->
+        <address>
+            Contact us at: <a href="mailto:info@example.com">info@example.com</a><br>
+            123 Street, City, Country
+        </address>
+    </footer>
+
+</body>
+</html>
