@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table with thead and tbody</title>
+  <style>
+    /* Style for the table */
+    table {
+      border-collapse: collapse; /* Merge table borders */
+      width: 60%;                /* Set table width */
+      margin: 40px auto;         /* Center table with margin */
+      text-align: center;        /* Center text in cells */
+      font-family: Arial, sans-serif; /* Set font */
+    }
+
+    /* Style for caption */
+    caption {
+      caption-side: top;         /* Place caption above table */
+      font-style: italic;        /* Italic text */
+      margin-bottom: 10px;       /* Space below caption */
+    }
+
+    /* Style for table headers and data cells */
+    th, td {
+      border: 1px solid #555;    /* Border around cells */
+      padding: 10px;             /* Space inside cells */
+    }
+
+    /* Style for thead */
+    thead {
+      background-color: #f0f0f0; /* Light gray background for header */
+      font-weight: bold;          /* Bold text */
+    }
+
+    /* Alternate row coloring for tbody */
+    tbody tr:nth-child(even) {
+      background-color: #fafafa; /* Light background for even rows */
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <!-- Caption of the table -->
+    <caption>A test table with merged cells</caption>
+
+    <!-- Table Head Section -->
+    <thead>
+      <!-- First row of the table header -->
+      <tr>
+        <th rowspan="2"></th> <!-- Empty cell spanning 2 rows -->
+        <th colspan="2">Average</th> <!-- Merged cell spanning 2 columns -->
+        <th rowspan="2">Red eyes</th> <!-- Cell spanning 2 rows -->
+      </tr>
+      <!-- Second row of the table header -->
+      <tr>
+        <th>Height</th> <!-- Column under "Average" -->
+        <th>Weight</th> <!-- Column under "Average" -->
+      </tr>
+    </thead>
+
+    <!-- Table Body Section -->
+    <tbody>
+      <!-- Row for Males -->
+      <tr>
+        <td>Males</td>       <!-- First column -->
+        <td>1.9</td>         <!-- Height -->
+        <td>0.003</td>       <!-- Weight -->
+        <td>40%</td>         <!-- Red eyes percentage -->
+      </tr>
+      <!-- Row for Females -->
+      <tr>
+        <td>Females</td>
+        <td>1.7</td>
+        <td>0.002</td>
+        <td>43%</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
