@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Declares this is an HTML5 document -->
+
+<html lang="en">
+<!-- Root element of the page; 'lang="en"' sets the page language to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Defines the character encoding (UTF-8) — supports most characters worldwide -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive (fits mobile, tablet, and desktop screens) -->
+
+    <title>lists</title>
+    <!-- Sets the title shown on the browser tab -->
+</head>
+
+<body>
+    <!-- All the visible page content goes inside <body> -->
+
+    <h1>Lorem, ipsum dolor.</h1>
+    <!-- <h1> is the main heading (largest and most important) -->
+
+    <h2>Lorem ipsum dolor sit.</h2>
+    <!-- <h2> is a subheading (slightly smaller than h1) -->
+
+    <p>Lorem ipsum <em>dolor</em> sit.</p>
+    <!-- <p> creates a paragraph of text.
+         Inside, <em> means “emphasis” — text is italicized and semantically marked as emphasized. -->
+
+    <ol>
+        <!-- <ol> creates an Ordered List (items are automatically numbered) -->
+        <li>orange tea</li>
+        <!-- <li> defines a List Item -->
+        <li>black tea</li>
+        <!-- Second list item -->
+    </ol>
+
+    <img src="./images/hc.png" width="200px" alt="">
+    <!-- <img> displays an image.
+         'src' = path to image file
+         './' = current directory
+         'width="200px"' = set image width
+         'alt' = alternative text shown if image fails to load (empty here) -->
+
+    <!-- ---------------- BLOCK LEVEL ELEMENTS SECTION ---------------- -->
+    <div>
+        <!-- <div> is a generic container (block-level element).
+             It groups content together for layout or styling. -->
+        <h1>Block level elements</h1>
+        <ul>
+            <!-- <ul> creates an Unordered List (bulleted list) -->
+            <li>heading h1 to h6</li>
+            <li>ol, li</li>
+            <li>li</li>
+            <li>p</li>
+        </ul>
+    </div>
+
+    <!-- ---------------- INLINE ELEMENTS SECTION ---------------- -->
+    <div>
+        <h1>Inline elements</h1>
+        <ul>
+            <li>a tags</li>
+            <li>img</li>
+            <li>strong</li>
+            <li>em</li>
+        </ul>
+    </div>
+    <!-- Block vs Inline elements:
+         - Block-level elements (like <div>, <p>, <h1>, <ul>) start on a new line and take full width.
+         - Inline elements (like <a>, <em>, <strong>, <img>) stay within the same line as surrounding text. -->
+</body>
+</html>
